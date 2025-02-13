@@ -1,16 +1,17 @@
 import React from "react";
 import '../../Styles.css';
+import Video from '../../Assets/Videos/videobackground.mp4';
 
 const Home = () => {
     return (
-        <div className="headerfirstname">
-            <h1>Genise</h1>
+        <>
+            <div className="video-container">
+                <video autoPlay muted loop className="background-video">
+                    <source src={Video} type="video/mp4" />
 
-            <div className="headerlastname">
-                <h1>Butler</h1>
-
+                </video>
             </div>
-        </div>
+        </>
     )
 }
 export default Home;
