@@ -3,8 +3,13 @@ import '../../Styles.css';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
+        <div className="headerfirstname">
+            <h1>Genise</h1>
+
+            <div className="headerlastname">
+                <h1>Butler</h1>
+
+            </div>
         </div>
     )
 }

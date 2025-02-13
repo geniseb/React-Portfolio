@@ -25,3 +25,20 @@
 .underline-text:hover {
     text-decoration-color: #0fa189;
 }
+
+.headerfirstname {
+    font-size: 86px;
+    font-weight: 700;
+    font-family: 'pacifico';
+    color: #060606;
+    margin-top: 300px;
+    margin-left:180px;
+}
+.headerlastname {
+    font-size: 86px;
+    font-weight: 700;
+    font-family: 'pacifico';
+    color: #080808;
+    margin-top: -150px;
+    margin-left:130px;
+}
