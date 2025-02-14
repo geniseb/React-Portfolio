@@ -58,3 +58,22 @@
   object-fit: cover;
   z-index: -1;
 }
+.aboutheader {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'pacifico';
+    color: #060606;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.abouttext {
+    font-size:40px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #060606;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right:1025px;
+    line-height: 1.5
+}
