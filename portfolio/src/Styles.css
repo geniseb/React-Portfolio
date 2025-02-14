@@ -1,79 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-.navbar > ul {
+.navbar>ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    padding: 6px 1300px;
+    padding: 6px;
     list-style-type: none;
     gap: 40px;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .underline-text {
     text-decoration-color: transparent;
     text-underline-offset: 8px;
-    transition: text-decoration-color 1s; 
+    transition: text-decoration-color 1s;
 }
 
 .underline-text:hover {
     text-decoration-color: #0fa189;
 }
 
-.headerfirstname {
-    font-size: 86px;
-    font-weight: 700;
-    font-family: 'pacifico';
-    color: #060606;
-    margin-top: 300px;
-    margin-left:180px;
-}
-.headerlastname {
-    font-size: 86px;
-    font-weight: 700;
-    font-family: 'pacifico';
-    color: #080808;
-    margin-top: -150px;
-    margin-left:130px;
-}
-
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 5%;
     padding-top: 30px;
-    height: 0;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 .background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+
+    /* z-index: -1; */
 }
-.aboutheader {
-    font-size: 50px;
+
+
+.about-header {
+    font-size: 80px;
     font-weight: 700;
-    font-family: 'pacifico';
+    font-family: 'Tangerine';
     color: #060606;
+    text-shadow: 10px 8px 4px #d5cfcf;
     margin-top: 100px;
     margin-left: 100px;
 }
 
-.abouttext {
-    font-size:40px;
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    padding: 50px 100px; /* Consistent padding, adjust as needed */
+    /* justify-content: space-between;  Optional: Distribute space between items */
+}
+
+.about-text {
+    flex: 1; /* Allow text to take up available space */
+    font-size: 40px;
     font-weight: 500;
     font-family: 'Roboto';
     color: #060606;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right:1025px;
-    line-height: 1.5
+    line-height: 1.5;
+    margin-right: 50px; /* Space between text and image */
+}
+
+.about-image {
+    width: 500px;
+    height: 500px;
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 900px) { /* Adjust breakpoint as needed */
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .about-text {
+        margin-right: 0;
+        margin-bottom: 20px; /* Space below text on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-image {
+        margin-left: 0; /* Remove left margin on image */
+    }
 }
