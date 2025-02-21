@@ -18,6 +18,10 @@ const About = () => {
 
             <img src={Image} alt="picture of graphic technology" className="about-image" />
             </div>
+
+            <div className="about-morebutton">
+                <button className="about-morebuttontext-">MORE</button>
+            </div>
         </>
     );
 }

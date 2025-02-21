@@ -63,12 +63,12 @@
 
 .about-text {
     flex: 1; /* Allow text to take up available space */
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     font-family: 'Roboto';
     color: #060606;
     line-height: 1.5;
-    margin-right: 50px; /* Space between text and image */
+    margin-right: 80px; /* Space between text and image */
 }
 
 .about-image {
@@ -94,3 +94,20 @@
         margin-left: 0; /* Remove left margin on image */
     }
 }
+
+button {
+    background-color: #0fa189; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 15px; /* Font size */
+    margin-left: 25%; /* Remove left margin on image */
+    font-weight: bold;
+
+  }
+  
+  button:hover {
+    background-color: #0c7463; /* Darker blue on hover */
+  }
