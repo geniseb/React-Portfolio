@@ -14,10 +14,10 @@ import Card from "../Components/Card";
 
 const Projects = () => {
   const projects = [
-    // {
-    //   image: Image1,
-    //   title: "GourMenu",
-    // },
+    {
+      image: Image1,
+      title: "GourMenu",
+    },
     // {
     //   image: Image2,
     //   title: "Solemate",
@@ -55,9 +55,9 @@ const Projects = () => {
           <h1 className="project-header">Projects</h1>
         </div>
 
-        {/* <div className="logo-container">
+        <div className="logo-container">
           <img src={Image9} alt="logo picture" className="logo-logo" />
-        </div> */}
+        </div>
 
         <div>
           <div className="project-container">
