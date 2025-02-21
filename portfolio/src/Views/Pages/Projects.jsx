@@ -18,14 +18,14 @@ const Projects = () => {
       image: Image1,
       title: "GourMenu",
     },
-    // {
-    //   image: Image2,
-    //   title: "Solemate",
-    // },
-    // {
-    //   image: Image3,
-    //   title: "Random Quote Machine",
-    // },
+    {
+      image: Image2,
+      title: "Solemate",
+    },
+    {
+      image: Image3,
+      title: "Random Quote Machine",
+    },
     // {
     //   image: Image4,
     //   title: "Digital Business Card",
