@@ -15,8 +15,6 @@ const Skills = () => {
             <img src={Image} alt="skills picture" className="skills-image" />
         </div>
 
-
-
         </>
     )
 }
