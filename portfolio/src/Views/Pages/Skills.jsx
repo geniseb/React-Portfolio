@@ -11,9 +11,9 @@ const Skills = () => {
         
         </div>
 
-        {/* <div className="skills-container">
+        <div className="skills-container">
             <img src={Image} alt="skills picture" className="skills-image" />
-        </div> */}
+        </div>
 
 
 
