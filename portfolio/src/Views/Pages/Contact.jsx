@@ -15,17 +15,17 @@ const Contact = () => {
 
             </div>
 
-            <div className="contact-section2">
-                {/* <h5 className="contact-section2">(602) 366-5873</h5>
-              <a href="#"><h5 className="contact-section2">genise.butler@outlook.com</h5></a>
-                <h5 className="contact-section2">4032 E. Shangri-La Road</h5>
-                <h5 className="contact-section2">Phoenix, AZ 85028</h5> */}
+            <div className="contact-section">
+                <h5 className="contact-info">(602) 366-5873</h5>
+                <a href="mailto:genise.butler@outlook.com"><h5 className="contact-info">genise.butler@outlook.com</h5></a>
+                <h5 className="contact-info">4032 E. Shangri-La Road</h5>
+                <h5 className="contact-info">Phoenix, AZ 85028</h5>
 
             </div >
 
-            {/* <form className="contact-form"></form> */}
+            {/* <form className="form-Title">Let's Build Something Great!</form> */}
 
-            
+
         </div>
 
     )
