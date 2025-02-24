@@ -274,53 +274,52 @@ button:hover {
     width: 100%;
     height: 100vh;
     /* Full height of the viewport */
-}
-
-.contact-container {
     display: flex;
-    align-items: center;
-    /* Vertically align items */
-    padding: 50px 100px;
-    /* Consistent padding, adjust as needed */
-    /* justify-content: space-between;  Optional: Distribute space between items */
+    flex-direction: column;
+    align-items: flex-start;  /* Center the content horizontally */
+    justify-content: center; /*  the content vertically */
+    padding: 50px;
 }
 
-/* Background image container */
 .contact-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    /* Keeps the image behind the title */
+    z-index: -1; /* Keeps the image behind the content */
 }
 
-/* Styling for the background image */
 .contact-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Ensures the image covers the area without stretching */
+    object-fit: cover; /* Ensures the background image covers the area */
 }
 
-/* Title styling */
-.contact-title{
-    font-size:190px;
+/* Styling for the contact title */
+.contact-title {
+    font-size: 190px;
     font-family: 'Tangerine', cursive;
-    /* font-weight: 700; */
     color: white;
-    /* text-shadow: 6px 2px 2px #d5cfcf; */
-    /* margin-top: 0px; */
-    margin-left: 100px;
+    text-align: center;  /* Center align the title */
+    margin-bottom: 30px;  /* Add space below the title */
 }
 
-.contact-title2{
+/* Styling for the contact information */
+.contact-info {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;  /* Add margin to separate each line of contact info */
+    text-align: center; /* Center the contact info */
+    text-decoration: none;
+}
+
+.form-title {
    font-size: 40px;
    font-family: 'Tangerine', cursive;
 }
 
-.contact-section2 {
+.form-info {
     font-size: 20px;
     /* font-weight: 700; */
     color: white;
