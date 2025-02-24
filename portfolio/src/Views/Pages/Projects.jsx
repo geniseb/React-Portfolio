@@ -1,13 +1,13 @@
 import React from "react";
-import Image from "../../Assets/Images/projectbackground.png";
+// import Image from "../../Assets/Images/projectbackground.png";
 import Image1 from "../../Assets/Images/projectgourmenu.png";
 import Image2 from "../../Assets/Images/projectsolemate.png";
-// import Image3 from "../../Assets/Images/projectrandomquote.png";
-// import Image4 from "../../Assets/Images/projectdigitalbusinesscard.png";
-// import Image5 from "../../Assets/Images/projectlogo.png";
-// import Image6 from "../../Assets/Images/projectmobileadvertisement.png";
-// import Image7 from "../../Assets/Images/projectcommercial.png";
-// import Image8 from "../../Assets/Images/projectlabel.png";
+import Image3 from "../../Assets/Images/projectrandomquote.png";
+import Image4 from "../../Assets/Images/projectdigitalbusinesscard.png";
+import Image5 from "../../Assets/Images/projectlogo.png";
+import Image6 from "../../Assets/Images/projectmobileadvertisement.png";
+import Image7 from "../../Assets/Images/projectcommercial.png";
+import Image8 from "../../Assets/Images/projectlabel.png";
 import Image9 from "../../Assets/Logos/gplogo.png";
 import '../../Styles.css';
 import Card from "../Components/Card";
@@ -26,31 +26,31 @@ const Projects = () => {
       image: Image3,
       title: "Random Quote Machine",
     },
-    // {
-    //   image: Image4,
-    //   title: "Digital Business Card",
-    // },
-    // {
-    //   image: Image5,
-    //   title: "Logo",
-    // },
-    // {
-    //   image: Image6,
-    //   title: "Mobile Advertisement",
-    // },
-    // {
-    //   image: Image7,
-    //   title: "Commercial",
-    // },
-    // {
-    //   image: Image8,
-    //   title: "Bottle Label",
-    // },
+    {
+      image: Image4,
+      title: "Digital Business Card",
+    },
+    {
+      image: Image5,
+      title: "Logo",
+    },
+    {
+      image: Image6,
+      title: "Mobile Advertisement",
+    },
+    {
+      image: Image7,
+      title: "Commercial",
+    },
+    {
+      image: Image8,
+      title: "Bottle Label",
+    },
   ];
   return (
     <>
       <div className="background-container">
-        <img src={Image} alt="background picture" className="background-image" />
+        {/* <img src={Image} alt="background picture" className="background-image" /> */}
         <div className="header">
           <h1 className="project-header">Projects</h1>
         </div>
