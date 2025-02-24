@@ -242,6 +242,14 @@ button:hover {
 .skillspage-title{
     margin-bottom:0px;
  }
+
+ .sub-title {
+    border-top: 2px solid #12edf2;
+    width: 48%; /* Adjust width to make the line shorter */
+    padding-top: 10px;
+    text-decoration:none;
+    text-shadow: none;
+ }
  
 
 .skills-container {
@@ -255,12 +263,8 @@ button:hover {
     /* Add some space below the logo and header */
 }
 
-
-
-
-
 .skills-image {
     width: 75%;
     padding-top: 10px;
-    margin-left: 100px;
+ 
 }
