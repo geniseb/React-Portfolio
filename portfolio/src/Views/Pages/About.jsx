@@ -20,7 +20,7 @@ const About = () => {
             </div>
 
             <div className="about-morebutton">
-                <button className="about-morebuttontext-">MORE</button>
+                <button className="about-morebuttontext-">More</button>
             </div>
         </>
     );
