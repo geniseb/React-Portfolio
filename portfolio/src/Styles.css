@@ -323,7 +323,7 @@ button:hover {
 }
 
 .form-title {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Tangerine', cursive;
     color: white;
     position: absolute; /* Make sure it's positioned relative to the container */
@@ -332,80 +332,58 @@ button:hover {
     /* Optionally, adjust the distance from the bottom */
 }
 
-.form-info {
-    font-size: 20px;
-    /* font-weight: 700; */
-    color: white;
-    /* text-shadow: 6px 2px 2px #d5cfcf; */
-    /* margin-top: 0px; */
-    margin-left: 55px;
-}
-
-.contact-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Centers the form vertically and horizontally */
-    padding: 150px 100px;
-    color: white;
-    height: 100vh;
-    /* Ensure full screen height */
-    width: 100%;
-    /* Full width of the screen */
-    max-width: 800px;
-    /* Maximum width for the form */
-    margin: 0 auto;
-    /* Center the form horizontally */
-
-}
-
-.contact-form {
-    width: 100%;
-    /* Make form take full width of container */
-    max-width: 600px;
-    /* Limit max width to avoid overly stretched form */
+.form-background {
+    background-color: #03063e3f; /* Translucent background for the form container */
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Optional: Add a background color to make the form stand out */
     border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Optional: Add shadow to the form for emphasis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form .form-group {
+.form-group {
     margin-bottom: 20px;
-    /* Space between form fields */
 }
 
-.contact-form label {
-    font-size: 1.2em;
-    /* Larger font size for labels */
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1.1em;
-    border-radius: 5px;
+    font-size: 1rem;
     border: 1px solid #ddd;
-    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-.contact-form button {
+/* Enable focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #12edf2; /* Cyan color */
+    color: #fff;
+    font-size: 1.1rem;
     padding: 12px 20px;
-    margin: 0px;
-    font-size: 1.2em;
-    background-color: #12edf2;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 0%;
     transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: #03063e;
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
