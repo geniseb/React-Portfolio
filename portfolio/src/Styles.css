@@ -31,6 +31,7 @@
     /* margin-top: 0px; */
     margin-left: 100px;
 }
+
 /* 
 .project-header {
     color: #ffffff;
@@ -88,7 +89,8 @@
     align-items: center;
     padding: 50px 100px;
     /* Consistent padding, adjust as needed */
-    justify-content: space-between;  /* Ensure the text and image have space between them */
+    justify-content: space-between;
+    /* Ensure the text and image have space between them */
 }
 
 .about-text {
@@ -98,13 +100,16 @@
     font-family: 'Roboto';
     color: #060606;
     line-height: 1.5;
-    margin-right: 60px; /* Space between text and image */
+    margin-right: 60px;
+    /* Space between text and image */
 }
 
 .about-image {
     width: 50%;
-    height: auto; /* Adjust for a more natural aspect ratio */
-    margin-left: 20px; /* Optional: Add a left margin to image for further spacing */
+    height: auto;
+    /* Adjust for a more natural aspect ratio */
+    margin-left: 20px;
+    /* Optional: Add a left margin to image for further spacing */
 }
 
 button {
@@ -139,8 +144,8 @@ button:hover {
     position: relative;
     width: 100%;
     height: 100%; */
-    /* 100% of the viewport height */
-    /* overflow: hidden;
+/* 100% of the viewport height */
+/* overflow: hidden;
 } */
 
 /* Make sure the background image covers the full page */
@@ -151,9 +156,9 @@ button:hover {
     width: 100%;
     height: 100%;
     object-fit: fit; */
-    /* This ensures the image covers the entire area without stretching */
-    /* z-index: -1; */
-    /* Place the image behind other content */
+/* This ensures the image covers the entire area without stretching */
+/* z-index: -1; */
+/* Place the image behind other content */
 /* } */
 
 .logo-container {
@@ -232,4 +237,30 @@ button:hover {
     font-family: 'Roboto';
     color: white !important;
     margin-bottom: 20px;
+}
+
+.skillspage-title{
+    margin-bottom:0px;
+ }
+ 
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 30px; */
+    /* padding: 20px; */
+    /* margin-top: 50px; */
+    /* width:250%; */
+    /* Add some space below the logo and header */
+}
+
+
+
+
+
+.skills-image {
+    width: 75%;
+    padding-top: 10px;
+    margin-left: 100px;
 }
