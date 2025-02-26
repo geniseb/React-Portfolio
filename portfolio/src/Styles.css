@@ -11,6 +11,8 @@
     list-style-type: none;
     gap: 40px;
     font-size: 20px;
+    background-color: white;
+
 }
 
 .underline-text {
@@ -25,35 +27,79 @@
 
 .header {
     font-size: 40px;
-    /* font-weight: 700; */
+    font-weight: 700;
     color: #060606;
     text-shadow: 6px 2px 2px #d5cfcf;
-    /* margin-top: 0px; */
+    margin-top: 0px;
     margin-left: 100px;
 }
 
-/* 
-.project-header {
-    color: #ffffff;
-    text-shadow: 6px 2px 2px #060606;
-} */
-
+/* Full page video background */
 .video-container {
     position: relative;
-    padding-bottom: 5%;
-    padding-top: 30px;
-    overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
+/* Styling for the video background */
 .background-video {
-    position: relative;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the whole screen */
+    z-index: -1;
+    /* Puts the video behind the content */
+}
+
+/* Home title styling */
+.home-title {
+    font-size: 120px;
+    font-family: 'Tangerine', cursive;
+    color: white;
+    margin: 30px auto;
+    padding: 75px;
+}
+
+.subtitle-container {
+    position: absolute;
+    margin: 140px auto;
+    top: 60%;
+    left: 42%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.subtitle-description {
+    border-top: 3px solid #12edf2;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* Styling for the home logo */
+.home-logo {
+    position: absolute;
+    bottom: 180px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 200px;
+    /* Adjust size as needed */
+    z-index: 1;
+}
+
+.green-stop {
+    padding-top: 9px;
+    gap: 5px;
 }
 
 .about-container {
@@ -61,27 +107,8 @@
     align-items: center;
     /* Vertically align items */
     padding: 50px 100px;
-    /* Consistent padding, adjust as needed */
-    /* justify-content: space-between;  Optional: Distribute space between items */
-}
 
-.about-text {
-    flex: 1;
-    /* Allow text to take up available space */
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Roboto';
-    color: #060606;
-    line-height: 1.5;
-    margin-right: 60px;
-    /* Space between text and image */
 }
-
-.about-image {
-    width: 50%;
-    height: 50%;
-}
-
 
 /* Adjust breakpoint as needed */
 .about-container {
@@ -105,31 +132,24 @@
 }
 
 .about-image {
-    width: 50%;
+    width: 40%;
     height: auto;
     /* Adjust for a more natural aspect ratio */
-    margin-left: 20px;
+    margin-left: 0px 20px 0px;
     /* Optional: Add a left margin to image for further spacing */
 }
 
 button {
-    background-color: #12edf2;
-    /* Blue background */
-    color: white;
-    /* White text */
-    padding: 10px 20px;
-    /* Padding around text */
-    border: none;
-    /* Remove default border */
-    border-radius: 5px;
-    /* Rounded corners */
-    cursor: pointer;
-    /* Change cursor on hover */
-    font-size: 15px;
-    /* Font size */
     margin-left: 25%;
-    /* Remove left margin on image */
     font-weight: bold;
+    background-color: #12edf2;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
 }
 
@@ -137,29 +157,6 @@ button:hover {
     background-color: #03063e;
     /* Darker blue on hover */
 }
-
-/* You can adjust the max-width of images or add padding/margins to suit your design */
-
-/* .background-container {
-    position: relative;
-    width: 100%;
-    height: 100%; */
-/* 100% of the viewport height */
-/* overflow: hidden;
-} */
-
-/* Make sure the background image covers the full page */
-/* .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fit; */
-/* This ensures the image covers the entire area without stretching */
-/* z-index: -1; */
-/* Place the image behind other content */
-/* } */
 
 .logo-container {
     width: 100%;
@@ -222,7 +219,6 @@ button:hover {
     /* Enlarge the image on hover */
 }
 
-
 .project-container1,
 .project-container2 {
     position: relative;
@@ -247,7 +243,8 @@ button:hover {
     border-top: 2px solid #12edf2;
     width: 48%;
     /* Adjust width to make the line shorter */
-    padding-top: 10px;
+    padding-top: 3px;
+    margin-top: 10px;
     text-decoration: none;
     text-shadow: none;
 }
@@ -257,30 +254,28 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 30px; */
-    /* padding: 20px; */
-    /* margin-top: 50px; */
-    /* width:250%; */
-    /* Add some space below the logo and header */
 }
 
 .skills-image {
     width: 75%;
-    padding-top: 10px;
+
+}
+
+.page-container {
+    background-image: url(./Assets/Images/contactbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* Full height of the viewport */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    align-items: center;
     /* Center the content horizontally */
     justify-content: center;
     /*  the content vertically */
     padding: 50px 100px;
+    gap: 20%;
 }
 
 .contact-background {
@@ -300,15 +295,18 @@ button:hover {
     /* Ensures the background image covers the area */
 }
 
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Styling for the contact title */
 .contact-title {
-    font-size: 190px;
+    font-size: 140px;
     font-family: 'Tangerine', cursive;
     color: white;
-    text-align: left;
-    /* Center align the title */
-    margin-bottom: 30px;
-    /* Add space below the title */
+    margin: 0 auto;
 }
 
 /* Styling for the contact information */
@@ -316,27 +314,24 @@ button:hover {
     font-size: 20px;
     color: white;
     margin: 10px 0;
-    /* Add margin to separate each line of contact info */
-    text-align: left;
-    /* Center the contact info */
-    padding-left: 50px;
 }
 
-.form-title {
-    font-size: 40px;
+.form-heading {
+    margin-bottom: 5%;
+    right: 300px;
+    padding: 0px;
+    font-size: 60px;
     font-family: 'Tangerine', cursive;
     color: white;
-    position: absolute; /* Make sure it's positioned relative to the container */
-    right:300px; /* Position it to the right */
-    /* bottom: 50px;  */
-    /* Optionally, adjust the distance from the bottom */
 }
 
 .form-background {
-    background-color: #03063e3f; /* Translucent background for the form container */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #03063e5a;
+    margin-bottom: 30px;
+    width: 100%;
+
 }
 
 .form-group {
@@ -352,7 +347,7 @@ button:hover {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 93%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
@@ -373,7 +368,8 @@ button:hover {
 }
 
 .submit-button {
-    background-color: #12edf2; /* Cyan color */
+    background-color: #12edf2;
+    /* Cyan color */
     color: #fff;
     font-size: 1.1rem;
     padding: 12px 20px;
@@ -385,5 +381,268 @@ button:hover {
 }
 
 .submit-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #03063e;
+    /* Darker blue on hover */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #12edf2;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* Adds space between icons */
+    margin-left: 5px;
+
+}
+
+.footer-git,
+.footer-linkedin {
+    width: 35px;
+    /* Adjust to desired size */
+    height: 35px;
+    /* Maintains aspect ratio */
+}
+
+.footer-git:hover,
+.footer-linkedin:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.footer-back-to-top {
+    text-align: center;
+    /* Ensures the text is centered */
+    color: white;
+    cursor: pointer;
+}
+
+.footer-back-to-top:hover {
+    color: #12edf2;
+    /* Darker blue on hover */
+}
+
+.footer-logo {
+    width: 125px;
+    margin-right: 5px;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .navbar>ul {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .home-title {
+        font-size: 70px;
+        padding: 40px;
+    }
+
+    .subtitle-container {
+        margin: 20px auto;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 1.1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about-text {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .about-image {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .button {
+        margin-left: 0;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        height: 250px;
+        margin: 10px 0;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 100px;
+    }
+
+    .form-heading {
+        font-size: 40px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar>ul {
+        font-size: 18px;
+        gap: 30px;
+    }
+
+    .header {
+        font-size: 35px;
+        margin-left: 50px;
+    }
+
+    .home-title {
+        font-size: 90px;
+        padding: 60px;
+    }
+
+    .subtitle-container {
+        margin: 100px auto;
+        top: 60%;
+        font-size: 1.2rem;
+    }
+
+    .about-container {
+        padding: 30px;
+    }
+
+    .about-text {
+        font-size: 25px;
+    }
+
+    .about-image {
+        width: 50%;
+    }
+
+    .button {
+        margin-left: 25%;
+    }
+
+    .project-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(33.33% - 20px);
+        height: 280px;
+    }
+
+    .contact-title {
+        font-size: 120px;
+    }
+
+    .form-heading {
+        font-size: 50px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+    .navbar>ul {
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .header {
+        font-size: 40px;
+        margin-left: 100px;
+    }
+
+    .home-title {
+        font-size: 120px;
+        padding: 75px;
+    }
+
+    .subtitle-container {
+        margin: 140px auto;
+        top: 60%;
+        font-size: 1.3rem;
+    }
+
+    .about-container {
+        padding: 50px 100px;
+    }
+
+    .about-text {
+        font-size: 30px;
+    }
+
+    .about-image {
+        width: 50%;
+    }
+
+    .button {
+        margin-left: 25%;
+    }
+
+    .project-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .card {
+        width: calc(20% - 30px);
+        height: 300px;
+    }
+
+    .contact-title {
+        font-size: 140px;
+    }
+
+    .form-heading {
+        font-size: 60px;
+    }
 }
