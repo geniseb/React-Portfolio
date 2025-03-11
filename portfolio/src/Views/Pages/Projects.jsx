@@ -52,7 +52,7 @@ const Projects = () => {
       <div className="background-container">
         {/* <img src={Image} alt="background picture" className="background-image" /> */}
         <div className="header">
-          <h1 className="project-header">Projects</h1>
+          <h1 className="title">Projects</h1>
         </div>
 
         <div className="logo-container">
