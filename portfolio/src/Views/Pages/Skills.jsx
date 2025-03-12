@@ -7,7 +7,7 @@ const Skills = () => {
         <>
         <div className="header">
             <h1 className="title">Skills</h1>
-            <h3 className="sub-title">SOFTWARE & TECHNOLOGY</h3>
+            {/* <h3 className="sub-title">Software & Technology</h3> */}
         
         </div>
 
