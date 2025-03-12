@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       image: Image3,
-      title: "Random Quote Machine",
+      title: "Quote Machine",
     },
     {
       image: Image4,
@@ -32,7 +32,7 @@ const Projects = () => {
     },
     {
       image: Image5,
-      title: "Logo",
+      title: "Company Logo",
     },
     {
       image: Image6,
