@@ -1,17 +1,19 @@
 import React from 'react';
 import '../../Styles.css';
 
-const Card = ({ image, title }) => {
-    return (
+const Card = ({ image, title, link }) => {
+  return (
+    <>
+      <div className="card">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="card-link">
 
-        <div className="card">
-            <img src={image} alt="project thumbnail" className="card-images" />
-            <div className='card-content'>
-                <h3 className="card-title">{title}</h3>
-            </div>
-        </div>
-    )
+          <img className="card-images" src={image} alt={title} />
+          <div className="card-header">{title}</div>
 
-}
+        </a>
+      </div>
+    </>
+  );
+};
 
 export default Card;
